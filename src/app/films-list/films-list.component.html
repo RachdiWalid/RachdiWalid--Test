@@ -1,0 +1,5 @@
+<h1>Film à voir aujourd'hui</h1>
+<h1>{{datejour | date}}</h1>
+<ul *ngFor="let n of films">
+    <app-film [titre]="n.titre" [affiche]="n.affiche" [duree]="n.duree"></app-film>
+</ul>
